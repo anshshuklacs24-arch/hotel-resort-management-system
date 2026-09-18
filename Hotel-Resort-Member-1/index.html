@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Resort Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+            background: #f7f4ec;
+            color: #24352b;
+        }
+
+        header {
+            background: #173f2b;
+            color: white;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d7b56d;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #d7b56d;
+        }
+
+        .hero {
+            min-height: 78vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background:
+                linear-gradient(rgba(20, 50, 35, 0.72), rgba(20, 50, 35, 0.72)),
+                url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 13px 24px;
+            margin-right: 12px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        .primary {
+            background: #d7b56d;
+            color: #173f2b;
+        }
+
+        .secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .quick-links {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .quick-links h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .quick-links > p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 18px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #173f2b;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .card p {
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #9b772d;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #173f2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Royal Haven Resort</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="../Member-2_Rooms-Services/HTML/rooms.html">Rooms</a>
+        <a href="../Member-2_Rooms-Services/HTML/services.html">Services</a>
+        <a href="../Member-3_Gallery-Contact/HTML/gallery.html">Gallery</a>
+        <a href="../Member-4_Booking-About/HTML/booking.html">Booking</a>
+        <a href="../Member-3_Gallery-Contact/HTML/contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Royal Haven Resort</h1>
+        <p>
+            Experience comfort, elegance and peaceful hospitality.
+            Explore our rooms and services, view our gallery, and make
+            your booking with ease.
+        </p>
+
+        <div class="buttons">
+            <a class="primary" href="../Member-4_Booking-About/HTML/booking.html">Book Now</a>
+            <a class="secondary" href="../Member-2_Rooms-Services/HTML/rooms.html">Explore Rooms</a>
+        </div>
+    </div>
+</section>
+
+<section class="quick-links">
+    <h2>Explore Our Resort</h2>
+    <p>Choose a section to continue.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Login / Register</h3>
+            <p>Create an account or login to the resort system.</p>
+            <a href="./HTML/login.html">Open →</a>
+        </div>
+
+        <div class="card">
+            <h3>Rooms</h3>
+            <p>Explore comfortable rooms and available options.</p>
+            <a href="../Member-2_Rooms-Services/HTML/rooms.html">View Rooms →</a>
+        </div>
+
+        <div class="card">
+            <h3>Services</h3>
+            <p>Check the facilities and services offered by the resort.</p>
+            <a href="../Member-2_Rooms-Services/HTML/services.html">View Services →</a>
+        </div>
+
+        <div class="card">
+            <h3>Gallery</h3>
+            <p>Take a look at the resort's beautiful gallery.</p>
+            <a href="../Member-3_Gallery-Contact/HTML/gallery.html">View Gallery →</a>
+        </div>
+
+        <div class="card">
+            <h3>Booking</h3>
+            <p>Fill in the booking form to reserve your stay.</p>
+            <a href="../Member-4_Booking-About/HTML/booking.html">Book Now →</a>
+        </div>
+
+        <div class="card">
+            <h3>About Us</h3>
+            <p>Learn more about our hotel and resort management system.</p>
+            <a href="../Member-4_Booking-About/HTML/about.html">About →</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Royal Haven Resort | Hotel & Resort Management System</p>
+</footer>
+
+</body>
+</html>
