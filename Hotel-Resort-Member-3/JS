@@ -1,0 +1,38 @@
+
+// 1. Contact Form
+let form = document.querySelector(".form-box form");
+
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.querySelector('input[placeholder="Enter your name"]').value;
+    let email = document.querySelector('input[placeholder="Enter your email"]').value;
+    let phone = document.querySelector('input[placeholder="Enter phone number"]').value;
+    let subject = document.querySelector('input[placeholder="Enter subject"]').value;
+    let message = document.querySelector("textarea").value;
+
+    if (name === "" || email === "" || phone === "" || subject === "" || message === "") {
+        alert("Please fill all the fields!");
+    }
+    else {
+        alert("Thank you " + name + "! Your message has been sent successfully.");
+
+        form.reset();
+    }
+
+});
+
+
+// 2. Gallery Image Click
+let images = document.querySelectorAll(".gallery img");
+
+images.forEach(function(image) {
+
+    image.addEventListener("click", function() {
+
+        window.open(image.src, "_blank");
+
+    });
+
+});
